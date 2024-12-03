@@ -14,7 +14,11 @@ display_menu() {
 echo "Memperbarui paket dan menginstal QEMU..."
 apt-get update && apt-get upgrade -y
 apt-get install -y qemu qemu-utils qemu-system-x86 wget
-
+apt-get install qemu -y
+apt install qemu-utils -y
+apt install qemu-system-x86-xen -y
+apt install qemu-system-x86 -y
+apt install qemu-kvm -y
 echo "Instalasi QEMU selesai."
 
 # Menampilkan menu dan menangkap pilihan pengguna
