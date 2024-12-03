@@ -27,12 +27,14 @@ qemu-system-x86_64 \
 -cpu host \
 -enable-kvm \
 -boot order=d \
--drive file=windowsxx.iso,media=cdrom \
--drive file=windowsxx.img,format=raw,if=virtio \
+-drive file=windows2022.iso,media=cdrom \
+-drive file=windows2022.img,format=raw,if=virtio \
 -drive file=virtio-win.iso,media=cdrom \
 -device usb-ehci,id=usb,bus=pci.0,addr=0x4 \
 -device usb-tablet \
--vnc :0
+-vnc :0 \
+-audiodev none,id=noaudio
+
 ```
 
 ### 5. Akses QEMU via VNC
