@@ -34,19 +34,19 @@ qemu-system-x86_64 \
 -device usb-tablet \
 -vnc :0 \
 -audiodev none,id=noaudio
-
 ```
 
 ### 5. Akses QEMU via VNC
 Setelah QEMU berjalan:
-+ Gunakan aplikasi VNC Viewer untuk mengakses server melalui alamat :0 (misalnya, 127.0.0.1:0).
-+ Lanjutkan instalasi dan konfigurasi Windows Server di dalam QEMU.
++ Gunakan aplikasi VNC Viewer untuk mengakses server dengan menggunakan IP, username dan password server.
++ Lanjutkan instalasi dan konfigurasi Windows Server di dalam QEMU seperi membuat password, melakukan partisi, install driver dengan virtio dll
 
 ### 6. Konfigurasi Windows Server
 + Setelah berhasil masuk ke Windows Server, lakukan langkah berikut:
 + Aktifkan Remote Desktop melalui pengaturan sistem.
 + Nonaktifkan CTRL+ALT+DEL di Local Security Policy untuk mempermudah akses.
-+ Atur Power Settings agar sistem tidak pernah masuk mode tidur.
++ Atur Power Settings menjadi never agar sistem tidak pernah masuk mode tidur.
++ Lakukan setting apapun yang mana settingan ini akan menjadi default ada saat windows digunakan, misalkan install ffmpeg, install chrome dll
 
 ### 7. Kompres File Windows Server
 Setelah semua konfigurasi selesai, kompres image Windows Server untuk mempermudah distribusi. Gunakan perintah berikut, ganti xxxx dengan versi Windows (misalnya, windows2019):
@@ -76,7 +76,7 @@ http://[IP_ADDRESS]/windowsxxxx.gz
 ```
 Contoh:
 ```bash
-http://188.166.190.241/windows2019.gz
+http://152.41.203.70/windows2019.gz
 ```
 
 ### 10. Menjalankan Windows Server di Droplet Baru
