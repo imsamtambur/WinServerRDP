@@ -1,16 +1,14 @@
 #!/bin/bash
-
 # Fungsi untuk menampilkan menu
 display_menu() {
     echo "Pilih versi Windows Server yang ingin Anda siapkan:"
     echo "1. Windows Server 2016"
     echo "2. Windows Server 2019"
     echo "3. Windows Server 2022"
-    echo "4. Windows Server 2022 Datacenter"
-    read -p "Masukkan pilihan Anda (1-4): " choice
+    read -p "Masukkan pilihan Anda (1-3): " choice
 }
 
-# Update dan instalasi QEMU
+# Update, upgrade dan instalasi QEMU
 echo "Memperbarui paket dan menginstal QEMU..."
 apt-get update && apt-get upgrade -y
 apt-get install -y qemu qemu-utils qemu-system-x86 wget
@@ -41,11 +39,6 @@ case $choice in
         iso_file="windows2022.iso"
         iso_link="https://go.microsoft.com/fwlink/p/?LinkID=2195280&clcid=0x409&culture=en-us&country=US"
         ;;
-    4)
-        img_file="windows2022datacenter.img"
-        iso_file="windows2022datacenter.iso"
-        iso_link="https://go.microsoft.com/fwlink/p/?LinkID=2195280&clcid=0x409&culture=en-us&country=US"
-        ;;
     *)
         echo "Pilihan tidak valid. Skrip dihentikan."
         exit 1
@@ -56,7 +49,7 @@ echo "Anda telah memilih versi Windows: $img_file"
 
 # Membuat file image kosong untuk QEMU
 echo "Membuat file image untuk QEMU..."
-qemu-img create -f raw "$img_file" 40G
+qemu-img create -f raw "$img_file" 100G
 echo "File image $img_file berhasil dibuat."
 
 # Mendownload driver Virtio
