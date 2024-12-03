@@ -4,7 +4,7 @@ Repo ini untuk membuat ISO Windows Server dari berbagai versi yang bisa anda gun
 ### 1. Unduh File Installer
 Gunakan perintah berikut untuk mengunduh installer:
 ```bash
-wget https://raw.githubusercontent.com/imsamtambur/windows.server.DO/main/Master-WinServer-ISO.sh
+wget https://raw.githubusercontent.com/imsamtambur/WinServerRDP/main/Master-WinServer-ISO.sh
 ```
 
 ### 2. Berikan Izin Eksekusi pada File
