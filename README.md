@@ -20,15 +20,15 @@ Eksekusi file installer dengan perintah berikut:
 ```
 
 ### 4. Jalankan Windows Server di QEMU
-Setelah proses instalasi selesai, gunakan QEMU untuk memulai Windows Server. Ganti xx dengan versi Windows yang Anda pilih (misalnya windows2019):
+Setelah proses instalasi selesai, gunakan QEMU untuk memulai Windows Server. Ganti xxxx dengan versi Windows yang Anda pilih (misalnya windows2019):
 ```bash
 qemu-system-x86_64 \
 -m 4G \
 -cpu host \
 -enable-kvm \
 -boot order=d \
--drive file=windows2022.iso,media=cdrom \
--drive file=windows2022.img,format=raw,if=virtio \
+-drive file=windowsxxxx.iso,media=cdrom \
+-drive file=windowsxxxx.img,format=raw,if=virtio \
 -drive file=virtio-win.iso,media=cdrom \
 -device usb-ehci,id=usb,bus=pci.0,addr=0x4 \
 -device usb-tablet \
@@ -76,7 +76,7 @@ http://[IP_ADDRESS]/windowsxxxx.gz
 ```
 Contoh:
 ```bash
-http://152.41.203.70/windows2019.gz
+http://152.41.203.70/windowsxxxx.gz
 ```
 
 ### 10. Menjalankan Windows Server di Droplet Baru
