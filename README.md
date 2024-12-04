@@ -42,7 +42,7 @@ Setelah QEMU berjalan:
 + Lanjutkan instalasi dan konfigurasi Windows Server di dalam QEMU seperi membuat password, melakukan partisi, install driver dengan virtio dll
 
 ### 6. Konfigurasi Windows Server
-+ Setelah berhasil masuk ke Windows Server, lakukan langkah berikut:
+Setelah berhasil masuk ke Windows Server, lakukan langkah berikut:
 + Aktifkan Remote Desktop melalui pengaturan sistem.
 + Nonaktifkan CTRL+ALT+DEL di Local Security Policy untuk mempermudah akses.
 + Atur Power Settings menjadi never agar sistem tidak pernah masuk mode tidur.
