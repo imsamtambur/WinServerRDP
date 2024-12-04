@@ -49,7 +49,7 @@ echo "Anda telah memilih versi Windows: $img_file"
 
 # Membuat file image kosong untuk QEMU
 echo "Membuat file image untuk QEMU..."
-qemu-img create -f raw "$img_file" 100G
+qemu-img create -f raw "$img_file" 40G
 echo "File image $img_file berhasil dibuat."
 
 # Mendownload driver Virtio
