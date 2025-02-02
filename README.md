@@ -46,7 +46,8 @@ Setelah berhasil masuk ke Windows Server, lakukan langkah berikut:
 + Aktifkan Remote Desktop melalui pengaturan sistem.
 + Nonaktifkan CTRL+ALT+DEL di Local Security Policy untuk mempermudah akses.
 + Atur Power Settings menjadi never agar sistem tidak pernah masuk mode tidur.
-+ Lakukan setting apapun yang mana settingan ini akan menjadi default ada saat windows digunakan, misalkan install ffmpeg, install chrome dll
++ Copy driver Vertio ke Drive C
++ (Tambahan) Lakukan setting apapun yang mana settingan ini akan menjadi default ada saat windows digunakan, misalkan install ffmpeg, install chrome dll
 
 ### 7. Kompres File Windows Server
 Setelah semua konfigurasi selesai, kompres image Windows Server untuk mempermudah distribusi. Gunakan perintah berikut, ganti xxxx dengan versi Windows (misalnya, windows2019):
