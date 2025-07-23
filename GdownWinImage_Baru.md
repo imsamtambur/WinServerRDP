@@ -15,7 +15,7 @@ sudo apt upgrade -y
 sudo apt install python3 python3-pip -y
 ```
 ## Cek Sukses Install Phyton dan PIP (Optional bisa dilewati)
-Untuk memastikan install phyton dan PIP sukses, lakukan pengecekan dengan perintah dibawah satu satu, tanda sukses akan muncul versi phyton dan versi PIP
+Untuk memastikan install phyton dan PIP sukses, lakukan pengecekan dengan perintah dibawah satu-satu, tanda sukses akan muncul versi phyton dan versi PIP
 ```bash
 python3 --version
 ```
@@ -23,7 +23,7 @@ python3 --version
 pip3 --version
 ```
 ## Install dan jalankan Virtual Environment
-Jalankan Satu satu perntah dibawah ini
+Jalankan Satu-satu perntah dibawah ini
 ```bash
 sudo apt update
 ```
@@ -36,7 +36,7 @@ python3 -m venv venv
 ```bash
 source venv/bin/activate
 ```
-Tandanya sukses nanti di command akan di awali (venv).
+Tandanya sukses menjalankan enviroment nanti di command akan di awali (venv).
 Contoh :
 (venv) root@RDPKU:~#
 
@@ -46,7 +46,8 @@ Setelah itu bisa lanjut install gdown menggunakan envoriment
 ```bash
 pip install gdown
 ```
-## Verifikasi GDwon
+## Verifikasi GDwon  (Optional bisa dilewati)
+Untuk memastikan install gdown sukses, lakukan pengecekan dengan perintah dibawah, tanda sukses akan muncul versi gdown
 ```bash
 gdown --version
 ```
